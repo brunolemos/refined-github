@@ -215,6 +215,7 @@ function ajaxedPagesHandler() {
 
 	if (pageDetect.isCommit()) {
 		enableFeature(addPatchDiffLinks);
+		enableFeature(toggleAllThingsWithAlt);
 	}
 
 	if (pageDetect.isPR() || pageDetect.isIssue() || pageDetect.isCommit() || pageDetect.isDiscussion()) {
