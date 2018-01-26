@@ -179,7 +179,6 @@ function ajaxedPagesHandler() {
 		enableFeature(fixSquashAndMergeTitle);
 		enableFeature(openCIDetailsInNewTab);
 		enableFeature(waitForBuild);
-		enableFeature(toggleAllThingsWithAlt);
 	}
 
 	if (pageDetect.isQuickPR()) {
@@ -215,6 +214,7 @@ function ajaxedPagesHandler() {
 
 	if (pageDetect.isCommit()) {
 		enableFeature(addPatchDiffLinks);
+		enableFeature(toggleAllThingsWithAlt);
 	}
 
 	if (pageDetect.isPR() || pageDetect.isIssue() || pageDetect.isCommit() || pageDetect.isDiscussion()) {
@@ -229,6 +229,7 @@ function ajaxedPagesHandler() {
 	if (pageDetect.isPRFiles() || pageDetect.isPRCommit()) {
 		enableFeature(addCopyFilePathToPRs);
 		enableFeature(preserveWhitespaceOptionInNav);
+		enableFeature(toggleAllThingsWithAlt);
 	}
 
 	if (pageDetect.isPRFiles()) {
