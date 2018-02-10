@@ -218,6 +218,10 @@ function ajaxedPagesHandler() {
 		enableFeature(toggleAllThingsWithAlt);
 	}
 
+	if (pageDetect.isCompare()) {
+		enableFeature(toggleAllThingsWithAlt);
+	}
+
 	if (pageDetect.isPR() || pageDetect.isIssue() || pageDetect.isCommit() || pageDetect.isDiscussion()) {
 		enableFeature(addReactionParticipants);
 		enableFeature(showRealNames);
