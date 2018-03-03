@@ -56,6 +56,6 @@ function handleClick(event) {
 }
 
 export default function () {
-	delegate('#files', '.js-details-target', 'click', handleClick);
+	delegate('.repository-content', '.js-details-target', 'click', handleClick);
 	addTooltips();
 }
